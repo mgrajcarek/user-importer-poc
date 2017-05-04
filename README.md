@@ -25,6 +25,15 @@ public function registerBundles()
     );
 }
 ```
+Register bundle routes `app/config/routing.yml`
+```php
+net_interactive_user_importer:
+    resource: "@NetInteractiveUserImporterBundle/Resources/config/routing.xml"
+    prefix:   /
+```
+
+Then go to page `http(s)://your.domain/user/importer/upload` to begin.
+
 ## Testing
 Setup the test suite using Composer:
 ```
