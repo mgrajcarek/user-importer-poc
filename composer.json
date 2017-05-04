@@ -1,9 +1,14 @@
 {
     "name": "netinteractive/user-importer-bundle",
-    "description": "Recruitement task - user importer from CSV file",
+    "description": "Recruitment task - user importer from CSV file",
     "type": "symfony-bundle",
     "require": {
-        "php": ">=7.1"
+        "php": ">=7.1",
+        "symfony/validator": "~3.0",
+        "symfony/http-foundation": "~3.0",
+        "symfony/dependency-injection": "~3.0",
+        "doctrine/doctrine-bundle": "^1.6",
+        "doctrine/orm": "~v2.5"
     },
     "require-dev": {
         "phpspec/phpspec": "^3.0"
