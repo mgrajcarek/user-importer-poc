@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Import statistics</h1>
+    <table>
+        <tr>
+            <td>Successful:</td>
+            <td>{{ statistics.successful }}</td>
+        </tr>
+        <tr>
+            <td>Failed:</td>
+            <td>{{ statistics.failed }}</td>
+        </tr>
+        <tr>
+            <td>Duration:</td>
+            <td>{{ statistics.duration }} ms</td>
+        </tr>
+    </table>
+{% endblock %}

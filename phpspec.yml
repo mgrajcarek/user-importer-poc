@@ -1,0 +1,4 @@
+suites:
+    netinteractive_user_importer_bundle:
+        namespace: NetInteractive\Bundle\UserImporterBundle\
+        psr4_prefix: NetInteractive\Bundle\UserImporterBundle\

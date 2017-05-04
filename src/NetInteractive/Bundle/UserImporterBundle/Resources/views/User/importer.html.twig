@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Import field matching</h1>
+
+    {{ form_start(form, {'method': 'POST'}) }}
+
+    <div style="color:#ff0000">
+        {{ form_errors(form) }}
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>CSV field</th>
+                <th>Target table attr</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for element in form %}
+            {% if "hidden" not in element.vars.block_prefixes %}
+            <tr>
+                <td>
+                    {{ form_label(element) }}
+                </td>
+                <td>
+                    {{ form_widget(element) }}
+                </td>
+            </tr>
+            {% else %}
+                {{ form_widget(element) }}
+            {% endif %}
+        {% endfor %}
+        </tbody>
+    </table>
+    {{ form_end(form) }}
+{% endblock %}

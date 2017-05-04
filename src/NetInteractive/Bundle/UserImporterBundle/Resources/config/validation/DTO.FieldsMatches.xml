@@ -1,0 +1,19 @@
+<constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping
+        http://symfony.com/schema/dic/constraint-mapping/constraint-mapping-1.0.xsd">
+
+    <class name="NetInteractive\Bundle\UserImporterBundle\DTO\FieldsMatches">
+
+        <constraint name="NetInteractive\Bundle\UserImporterBundle\Validator\Constraints\MandatoryMatchedFields" >
+            <option name="fields">
+                <value>username</value>
+                <value>givenName</value>
+                <value>surname</value>
+            </option>
+        </constraint>
+
+        <constraint name="NetInteractive\Bundle\UserImporterBundle\Validator\Constraints\UniquelyMatchedFields" />
+
+    </class>
+</constraint-mapping>

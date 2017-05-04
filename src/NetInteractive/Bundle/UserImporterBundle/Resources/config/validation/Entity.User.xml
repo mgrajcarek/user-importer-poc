@@ -1,0 +1,117 @@
+<constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping
+        http://symfony.com/schema/dic/constraint-mapping/constraint-mapping-1.0.xsd">
+
+    <class name="NetInteractive\Bundle\UserImporterBundle\Entity\User">
+
+        <property name="username">
+            <constraint name="NotBlank" />
+            <constraint name="Length">
+                <option name="max">255</option>
+            </constraint>
+        </property>
+
+        <property name="givenName">
+            <constraint name="NotBlank" />
+            <constraint name="Length">
+                <option name="max">255</option>
+            </constraint>
+        </property>
+
+        <property name="surname">
+            <constraint name="NotBlank" />
+            <constraint name="Length">
+                <option name="max">255</option>
+            </constraint>
+        </property>
+
+        <property name="number">
+            <constraint name="GreaterThan">
+                <option name="value">0</option>
+            </constraint>
+        </property>
+
+        <property name="gender">
+            <constraint name="Length">
+                <option name="min">1</option>
+                <option name="max">6</option>
+            </constraint>
+        </property>
+
+        <property name="nameSet">
+            <constraint name="Length">
+                <option name="min">1</option>
+                <option name="max">20</option>
+            </constraint>
+        </property>
+
+        <property name="title">
+            <constraint name="Length">
+                <option name="min">1</option>
+                <option name="max">4</option>
+            </constraint>
+        </property>
+
+        <property name="middleInitial">
+            <constraint name="Length">
+                <option name="min">1</option>
+                <option name="max">1</option>
+            </constraint>
+        </property>
+
+        <property name="streetAddress">
+            <constraint name="Length">
+                <option name="min">1</option>
+                <option name="max">255</option>
+            </constraint>
+        </property>
+
+        <property name="city">
+            <constraint name="Length">
+                <option name="min">1</option>
+                <option name="max">100</option>
+            </constraint>
+        </property>
+
+        <property name="state">
+            <constraint name="Length">
+                <option name="min">1</option>
+                <option name="max">100</option>
+            </constraint>
+        </property>
+
+        <property name="zipCode">
+            <constraint name="Length">
+                <option name="min">1</option>
+                <option name="max">20</option>
+            </constraint>
+        </property>
+
+        <property name="country">
+            <constraint name="Length">
+                <option name="min">1</option>
+                <option name="max">100</option>
+            </constraint>
+        </property>
+
+        <property name="emailAddress">
+            <constraint name="Email" />
+        </property>
+
+        <property name="password">
+            <constraint name="Length">
+                <option name="min">1</option>
+                <option name="max">255</option>
+            </constraint>
+        </property>
+
+        <property name="browserUserAgent">
+            <constraint name="Length">
+                <option name="min">1</option>
+                <option name="max">1000</option>
+            </constraint>
+        </property>
+
+    </class>
+</constraint-mapping>

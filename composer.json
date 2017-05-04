@@ -1,0 +1,16 @@
+{
+    "name": "netinteractive/user-importer-bundle",
+    "description": "Recruitement task - user importer from CSV file",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NetInteractive\\Bundle\\UserImporterBundle\\": "src"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<routes xmlns="http://symfony.com/schema/routing"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="net_interactive_user_importer_upload" path="/user/importer/upload">
+        <default key="_controller">NetInteractiveUserImporterBundle:User:upload</default>
+    </route>
+
+    <route id="net_interactive_user_importer_matching" path="/user/importer/matching">
+        <default key="_controller">NetInteractiveUserImporterBundle:User:matching</default>
+    </route>
+
+    <route id="net_interactive_user_importer_statistic" path="/user/importer/statistic">
+        <default key="_controller">NetInteractiveUserImporterBundle:User:statistics</default>
+    </route>
+
+</routes>
