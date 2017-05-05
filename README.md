@@ -32,6 +32,11 @@ net_interactive_user_importer:
     prefix:   /
 ```
 
+Update your database schema or use migrations to synchronize database
+```php
+bin/console doctrine:schema:update --force
+```
+
 Then go to page `http(s)://your.domain/user/importer/upload` to begin.
 
 ## Testing
