@@ -11,7 +11,7 @@ Add Git repository `git@github.com:mgrajcarek/user-importer-poc.git` to your `co
 ],
 ```
 
-Add `Dvs/CacheBundle` to your `composer.json` file:
+Add `NetInteractiveUserImporterBundle` to your `composer.json` file:
 ```
 $ composer require netinteractive/user-importer-bundle "~0.1"
 ```
